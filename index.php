@@ -17,12 +17,13 @@ include __DIR__ . '/data/db.php';
 <body class="bg-dark">
     <main id="movies">
         <div class="container">
+            <h1 class="text-white text-center my-3">Coming Soon <i class="fa-solid fa-film text-danger"></i></h1>
             <?php foreach ($movies as $movie) : ?>
                 <div class="card my-4">
                     <div class="card-body">
                         <h1 class="card-title text-center"><?= $movie->title ?></h1>
-                        <h4 class="card-subtitle mb-2 text-center">Language : <?= $movie->getToUpperLanguage() ?></h4>
-                        <h4 class="text-center mb-1">Vote : <?= $movie->vote ?></h4>
+                        <h4 class="card-subtitle mb-2 text-center">Language : <?= $movie->getToUpperLanguage() ?> <i class="fa-solid fa-flag-usa"></i></h4>
+                        <h4 class="text-center mb-1">Vote : <?= $movie->vote ?> <i class="fa-solid fa-star text-warning"></i></h4>
                         <hr>
                         <h5 class="text-center">Description</h5>
                         <p class="card-text text-center"><?= $movie->description ?></p>

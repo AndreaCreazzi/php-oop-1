@@ -19,5 +19,3 @@ class Movie
         return  strtoupper($this->language);
     }
 }
-
-$movie = new Movie('mummia', 'ita', 3, 'lorem');
