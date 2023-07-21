@@ -20,8 +20,4 @@ class Movie
     }
 }
 
-$mummia = new Movie('mummia', 'ita', 3, 'lorem');
-
-var_dump($mummia);
-
-echo $mummia->getToUpperLanguage();
+$movie = new Movie('mummia', 'ita', 3, 'lorem');
